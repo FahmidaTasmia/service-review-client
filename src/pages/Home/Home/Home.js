@@ -1,9 +1,10 @@
 import React from 'react';
+import Banner from '../Banner/Banner';
 
 const Home = () => {
     return (
         <div>
-            <img src="https://i.ibb.co/28srw8s/1.png" alt="" />
+           <Banner></Banner>
         </div>
     );
 };

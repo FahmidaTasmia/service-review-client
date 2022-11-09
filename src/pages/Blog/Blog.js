@@ -6,7 +6,7 @@ const Blog = () => {
         <div>
             <div className="hero  shadow-sm rounded md:p-32 rounded mb-5 md:mb-12">
                 {/* //banner */}
-    <div className="hero-content text-center grid grid-cols-2">
+    <div className="hero-content  grid grid-cols-2">
     <div className="max-w-md">
        
       <h1 className="md:text-3xl font-bold font-sans text-blue-700">Resourse for makers and <br /> creative to learn, sells & grow</h1>

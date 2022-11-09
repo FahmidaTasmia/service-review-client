@@ -7,7 +7,7 @@ const Footer = () => {
         <div className=''>
             <footer className="footer p-32  bg-gray-100 text-blue-500 rounded-md md:mt-24 ">
        <div >
-        <h4 className='text-3xl    font-semibold '>iDot</h4>
+        <span className='text-3xl    font-semibold '> <img className='w-8 h-8' src="https://i.ibb.co/6DwkMy6/demo6-revolution-062.png" alt="" /> iDot</span>
         <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
        </div>
        <div className="divider lg:divider-horizontal"></div> 
