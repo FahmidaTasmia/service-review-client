@@ -8,10 +8,10 @@ const About = () => {
   <img src="https://i.ibb.co/0srjDy5/7.png" alt="" />
    </div>
 
-    <div className='w-1/2'>
-     <p className='text-2xl font-bold text-blue-500'>About Us</p>
+    <div className='md:w-1/2'>
+     <p className='text-2xl font-bold text-blue-500'>About Myself</p>
      <h1 className="my-5 text-5xl font-bold">
-                        We are qualified <br />
+                       I am qualified <br />
                         & of experience <br />
                         in this field</h1>
         <p className="py-6">Data analysis is the practice of working with data to glean useful information, which can then be used to make informed decisions. </p>
