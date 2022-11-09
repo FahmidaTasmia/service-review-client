@@ -1,8 +1,26 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import Lottie from 'lottie-web';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../context/AuthProvider/AuthProvider';
 
 const SignUp = () => {
+    const {createUser} = useContext(AuthContext);
+    const handleSignUp = event =>{
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        
+        createUser(email, password)
+        .then(result => {
+            const user = result.user;
+            console.log(user);
+        })
+        .catch(err => console.error(err));
+    }
+
+
+
     const container =useRef(null);
     useEffect(()=>{
         const instance = Lottie.loadAnimation({
@@ -26,7 +44,7 @@ const SignUp = () => {
 
             <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 md:py-20 py-5">
                 <h1 className="md:text-5xl text-2xl text-blue-500 text-center font-bold">Sign Up</h1>
-                <form  className="card-body">
+                <form onSubmit={handleSignUp} className="card-body">
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text">Name</span>

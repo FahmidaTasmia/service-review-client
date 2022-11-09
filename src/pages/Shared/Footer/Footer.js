@@ -5,7 +5,7 @@ import { FaFacebook, FaGoogle, FaTwitter, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
     return (
         <div className=''>
-            <footer className="footer p-32  bg-gray-100 text-blue-500 rounded-md ">
+            <footer className="footer p-32  bg-gray-100 text-blue-500 rounded-md md:mt-24 ">
        <div >
         <h4 className='text-3xl    font-semibold '>iDot</h4>
         <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>

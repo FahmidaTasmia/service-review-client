@@ -1,0 +1,158 @@
+[
+    {
+        "_id": "635a0c0b64a6d231228942ae",
+        "service_id": "04",
+        "title": "Business Intelligence",
+        "img": "https://i.ibb.co/r4Kj0pr/3.png",
+        "price": "20.00",
+        "description": "It’s increasingly important for businesses to have a clear view of all their data to stay competitive, which is where business intelligence (BI) tools come in. After all, nearly 50% of all businesses already use BI tools, and projections show continued growth in coming years.But for those who haven’t adopted a tool yet, or are simply looking to learn more, it can be difficult to understand exactly what BI is. We created this complete guide to educate people on what BI is, how it works, and more.",
+        "facility": [
+            {
+                "name": "Business Intelligence Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "_id": "635a0c0b64a6d231228942af",
+        "service_id": "05",
+        "title": "Big Data Application",
+        "img": "https://i.ibb.co/PjGsD3h/05-5.png",
+        "price": "20.00",
+        "description": "Industry influencers, academicians, and other prominent stakeholders certainly agree that Big Data has become a big game-changer in most, if not all, types of modern industries over the last few years. As Big Data continues to permeate our day-to-day lives, there has been a significant shift of focus from the hype surrounding it to finding real value in its use.Generally, most organizations have several goals for adopting Big Data projects. While the primary goal for most organizations is to enhance customer experience, other goals include cost reduction, better-targeted marketing, and making existing processes more efficient. In recent times, data breaches have also made enhanced security an important goal that Big Data projects seek to incorporate.",
+        "facility": [
+            {
+                "name": "Big Data Application Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "_id": "635b591a1dafe382a9da8c96",
+        "service_id": "01",
+        "title": "Data Management",
+        "img": "https://i.ibb.co/28srw8s/1.png",
+        "price": "200.00",
+        "description": "Data management as a service is a type of cloud service that provides enterprises with centralized storage for disparate data sources. The label as a service references a pay-per-use business model that does not require the customer to purchase or manage infrastructure for data management.DMaaS is typically an operating expense that goes up and down based on how much service the customer is consuming. It is technically possible to provide DMaaS using on-premises infrastructure, or a private cloud offered by the DMaaS vendor, but all infrastructure must be provided and managed by the DMaaS vendor to be considered a service. Although it may be possible to do data management as a service this way, it is prohibitive to do so for logistical and cost reasons.",
+        "facility": [
+            {
+                "name": "Data Management Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "_id": "635b5afc1dafe382a9da8c98",
+        "service_id": "02",
+        "title": "Data Visualization",
+        "img": "https://i.ibb.co/hCy11S7/02.png",
+        "price": "150.00",
+        "description": "Data visualization consulting helps reveal critical data to business users via intuitive visuals. ScienceSoft’s consultants enable data visualization for customers to spot trends, track business goal achievements, compare the performance of various categories, products, brands, etc Data visualization is a way to represent information graphically, highlighting patterns and trends in data and helping the reader to achieve quick insights. Also known as “interactive visual exploration,” it enables the exploration of data via the manipulation of chart images, with the color, brightness, size, shape and motion of visual objects representing aspects of the dataset being analyzed. It includes an array of visualization options that go beyond those of pie, bar and line charts, including heat and tree maps, geographic maps, scatter plots, and other special-purpose visuals. These tools enable users to analyze the data by interacting directly with a visual representation of it.",
+        "facility": [
+            {
+                "name": "Data Visualization Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "_id": "635b5b691dafe382a9da8c99",
+        "service_id": "03",
+        "title": "Data monitization",
+        "img": "https://i.ibb.co/30cR2sn/2.png",
+        "price": "30.00",
+        "description": "Data Monetization refers to the process of using data to obtain quantifiable economic benefit. Internal or indirect methods include using data to make measurable business performance improvements and inform decisions. External or direct methods include data sharing to gain beneficial terms or conditions from business partners, information bartering, selling data outright (via a data broker or independently), or offering information products and services (for example, including information as a value-added component of an existing offering).",
+        "facility": [
+            {
+                "name": "Data monitization Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "_id": "635b5ba51dafe382a9da8c9a",
+        "service_id": "06",
+        "title": "Individual Analyst",
+        "img": "https://i.ibb.co/dKnXJCw/4.png",
+        "price": "20.00",
+        "description": "Sell-side analysts generally dominate the headlines. They are employed by brokerage houses to analyze companies and write in-depth reports after conducting what is sometimes called primary research. These reports are used to sell an idea to individuals and institutional clients. Individual investors gain access to these reports mainly by having accounts with the brokerage firm.The challenge facing the brokerages is it's extremely expensive to create all this research. Brokerages must recover the costs of paying sell-side analysts from somewhere, but deregulation has significantly reduced the ability to make a profit on anything except investment banking deals.",
+        "facility": [
+            {
+                "name": "Individual Analyst Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    }
+]
