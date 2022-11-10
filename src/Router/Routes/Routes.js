@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main";
+import AllServices from "../../pages/AllServices/AllServices";
 import Blog from "../../pages/Blog/Blog";
 import Checkout from "../../pages/Checkout/Checkout";
 import ErrorPage from "../../pages/ErrorPage/ErrorPage";
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
               {
                 path: '/checkout/:id',
                 element: <Checkout></Checkout>,
-                
+                loader:({params})=>fetch(`http://localhost:5000/services/${params.id}`)
               },
               {
                 path: '/orders',
@@ -41,7 +42,14 @@ const router = createBrowserRouter([
 
               {
                 path: '/services',
-                element: <Services></Services>
+                element: <Services></Services>,
+              
+              },
+
+              {
+                path: '/services',
+                element: <AllServices></AllServices>,
+                loader:()=>fetch('http://localhost:5000/services')
               },
 
               {

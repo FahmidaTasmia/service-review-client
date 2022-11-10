@@ -1,6 +1,5 @@
 [
     {
-        "_id": "635a0c0b64a6d231228942ae",
         "service_id": "04",
         "title": "Business Intelligence",
         "img": "https://i.ibb.co/r4Kj0pr/3.png",
@@ -25,8 +24,8 @@
             }
         ]
     },
+    
     {
-        "_id": "635a0c0b64a6d231228942af",
         "service_id": "05",
         "title": "Big Data Application",
         "img": "https://i.ibb.co/PjGsD3h/05-5.png",
@@ -52,7 +51,6 @@
         ]
     },
     {
-        "_id": "635b591a1dafe382a9da8c96",
         "service_id": "01",
         "title": "Data Management",
         "img": "https://i.ibb.co/28srw8s/1.png",
@@ -78,7 +76,6 @@
         ]
     },
     {
-        "_id": "635b5afc1dafe382a9da8c98",
         "service_id": "02",
         "title": "Data Visualization",
         "img": "https://i.ibb.co/hCy11S7/02.png",
@@ -104,7 +101,6 @@
         ]
     },
     {
-        "_id": "635b5b691dafe382a9da8c99",
         "service_id": "03",
         "title": "Data monitization",
         "img": "https://i.ibb.co/30cR2sn/2.png",
@@ -130,7 +126,6 @@
         ]
     },
     {
-        "_id": "635b5ba51dafe382a9da8c9a",
         "service_id": "06",
         "title": "Individual Analyst",
         "img": "https://i.ibb.co/dKnXJCw/4.png",
