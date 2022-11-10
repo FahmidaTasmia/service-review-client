@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../context/AuthProvider/AuthProvider';
-
+import { FaArrowRight } from "react-icons/fa";
 
 
 
 const Header = () => {
-const{user}=useContext(AuthContext);
+const{user,logOut}=useContext(AuthContext);
     const menuItems = <>
         <li className='font-semibold'><Link to='/'>Home</Link></li>
         <li className='font-semibold'><Link to='/blog'>Blog</Link></li>
@@ -17,6 +17,7 @@ const{user}=useContext(AuthContext);
        <>
         <li className='font-semibold'><Link to='/orders'>Orders</Link></li>,
         <li className='font-semibold'><Link to='/services'>Services</Link></li>
+        <button onClick={logOut}>logOut</button>
        </>
         :
         <li className='font-semibold'><Link to='/login'>Login</Link></li>
@@ -44,7 +45,11 @@ const{user}=useContext(AuthContext);
                 </ul>
             </div>
             <div className="navbar-end">
-            <button className="btn btn-outline btn-warning">Appointment</button>
+            <Link to='/login'>
+              <button className='btn hover:font-bold gap-2 btn-sm btn-outline text-blue-500 hover:bg-white hover:text-blue-500'>
+              Get Start <FaArrowRight></FaArrowRight>
+              </button>
+                </Link>
             </div>
         </div>
     );

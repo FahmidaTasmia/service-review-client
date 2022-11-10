@@ -2,10 +2,12 @@ import React, { useContext } from 'react';
 
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider/AuthProvider';
+import Work from '../Home/Work-process/Work';
+import Review from '../Review/Review';
 
 const Checkout = () => {
     const {img, price, title,_id,description}=useLoaderData()
-    const user =useContext(AuthContext);
+    const {user} =useContext(AuthContext);
    
     const handlePlaceOrder =event=>{
         event.preventDefault();
@@ -25,7 +27,7 @@ const Checkout = () => {
             message
         }
 
-        fetch('http://localhost:5000/orders', {
+        fetch('https://idot-server.vercel.app/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -58,6 +60,7 @@ const Checkout = () => {
                     <p className='text-blue-500 font-bold text-lg'>Total Price: $ {price}</p>
                    
                 </div>
+                
                 {/* form */}
                 <form onSubmit={handlePlaceOrder}  className='my-8 p-8' >
                 
@@ -73,7 +76,9 @@ const Checkout = () => {
             </form>
             </div>
 
-            
+            <div>
+                <Review></Review>
+            </div>
 
 
         </div>

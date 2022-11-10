@@ -3,8 +3,8 @@ import React from 'react';
 const Work = () => {
     return (
        <div className=' items-center md:py-12 shadow-sm rounded-md bg-gray-100'>
-            <p className="text-lg font-bold text-center md:mb-4">WORK PROCESS</p>
-                <h2 className="text-3xl font-bold text-center md:mb-8">How To Work</h2>
+            <p className="text-lg font-bold text-center md:mb-4 text-blue-500">WORK PROCESS</p>
+                <h2 className="text-3xl font-bold text-center md:mb-8">How I Work To deliver You the Best</h2>
                
 
       <div className='grid md:grid-cols-3 gap-8 w-9/12 m-auto'>
