@@ -15,6 +15,7 @@ const Home = () => {
            <Work></Work>
            <Skills></Skills>
            <NewsLetter></NewsLetter>
+      
         </div>
     );
 };

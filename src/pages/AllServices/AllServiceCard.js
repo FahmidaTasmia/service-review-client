@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa";
-import Review from '../Review/Review';
+import Star from './Star/Star';
 
 const AllServiceCard = ({service}) => {
-    const {img, price, title,_id,description}=service;
+    const {img, price, title,_id,description, rating,numReviews}=service;
     return (
     
 
@@ -13,8 +13,10 @@ const AllServiceCard = ({service}) => {
     <img src={img} alt="Shoes" className="rounded-xl w-60 h-60" />
   </figure>
   <div className="card-body  ">
+  <Star star={rating} reviews={numReviews}></Star>
     <h2 className="card-title text-blue-500">{title}</h2>
     <p className='text-justify'>{description.slice(0,200)}...</p>
+    
     
     <div className="card-actions my-3">
     <Link to={`/checkout/${_id}`}>

@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main";
+import AboutPage from "../../pages/AboutPage/AboutPage";
 import AllServices from "../../pages/AllServices/AllServices";
 import Blog from "../../pages/Blog/Blog";
 import Checkout from "../../pages/Checkout/Checkout";
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
     {
         path:'/',
         element:<Main></Main>,
+        errorElement:<ErrorPage></ErrorPage>,
         children:[
             {
                 path:'/',
@@ -34,7 +36,7 @@ const router = createBrowserRouter([
 
               {
                 path: '/checkout/:id',
-                element: <PrivateRoute><Checkout></Checkout></PrivateRoute>,
+                element: <Checkout></Checkout>,
                 loader:({params})=>fetch(`https://idot-server.vercel.app/services/${params.id}`)
               },
               {
@@ -43,8 +45,8 @@ const router = createBrowserRouter([
               },
 
               {
-                path: '/services',
-                element: <Services></Services>,
+                path: '/allServices',
+                element:<AllServices></AllServices>,
               
               },
 
@@ -68,8 +70,11 @@ const router = createBrowserRouter([
               },
 
               {
-                path:'*', element:<ErrorPage></ErrorPage>
-              }
+                path:'/about',
+                element:<AboutPage></AboutPage>
+              },
+
+             
         ]
     }
 ])

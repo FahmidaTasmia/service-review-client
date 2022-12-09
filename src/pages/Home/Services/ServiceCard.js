@@ -1,16 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa";
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
+import Star from '../../AllServices/Star/Star';
 
 const ServiceCard = ({service}) => {
-    const {img, price, title,_id,description}=service;
+    const {img, price, title,_id,description,rating,numReviews}=service;
     return (
 
         <div className="card w-96 bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">
-    <img src={img} alt="Shoes" className="rounded-xl w-60 h-60" />
+  <PhotoProvider>
+      <PhotoView src={img}>
+      <img src={img} alt="Shoes" className="rounded-xl w-60 h-60" />
+      </PhotoView>
+    </PhotoProvider>
+    {/* <img src={img} alt="Shoes" className="rounded-xl w-60 h-60" /> */}
   </figure>
   <div className="card-body  ">
+  <Star star={rating} reviews={numReviews}></Star>
     <h2 className="card-title text-blue-500">{title}</h2>
     <p className='text-justify'>{description.slice(0,200)}...</p>
     

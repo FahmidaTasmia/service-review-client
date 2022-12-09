@@ -9,6 +9,7 @@ const Header = () => {
 const{user,logOut}=useContext(AuthContext);
     const menuItems = <>
         <li className='font-semibold'><Link to='/'>Home</Link></li>
+        <li className='font-semibold'><Link to='/about'>About</Link></li>
         <li className='font-semibold'><Link to='/blog'>Blog</Link></li>
        
        {
@@ -16,7 +17,7 @@ const{user,logOut}=useContext(AuthContext);
         user?.email?
        <>
         <li className='font-semibold'><Link to='/orders'>Orders</Link></li>,
-        <li className='font-semibold'><Link to='/services'>Services</Link></li>
+        <li className='font-semibold'><Link to='/allServices'>Services</Link></li>
         <button onClick={logOut}>logOut</button>
        </>
         :

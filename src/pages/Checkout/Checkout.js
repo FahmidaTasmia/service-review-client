@@ -1,12 +1,20 @@
 import React, { useContext } from 'react';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider/AuthProvider';
-import Work from '../Home/Work-process/Work';
-import Review from '../Review/Review';
+import AddReview from '../AllServices/AddReview/AddReview';
+import ReviewItem from '../AllServices/ReviewItem/ReviewItem';
+import Star from '../AllServices/Star/Star';
+import UserRequired from '../AllServices/UserRequired/UserRequired';
+
 
 const Checkout = () => {
-    const {img, price, title,_id,description}=useLoaderData()
+    const serviceData = useLoaderData()
+    const {img, price, title,_id,description,rating,numReviews}=serviceData;
+    console.log(serviceData);
+    const[reviews, setReviews]=useState()
     const {user} =useContext(AuthContext);
    
     const handlePlaceOrder =event=>{
@@ -46,15 +54,25 @@ const Checkout = () => {
         .catch(error=>console.error(error));
     }
 
+
+
+    useEffect(()=>{
+        fetch(`http://localhost:5000/get-review/${_id}`)
+        .then(res=>res.json())
+        .then(data=>setReviews(data));
+
+    },[])
+
     return (
         
-        <div className='grid grid-cols-2'>
+        <div className='grid '>
             {/* //card */}
             <div className="card w-full bg-base-100 shadow-xl">
                 <figure className="px-10 pt-10">
                 <img src={img} alt="" />
                 </figure>
                 <div className="card-body  ">
+                <Star star={rating} reviews={numReviews}></Star>
                     <h2 className="card-title text-blue-500 font-bold text-2xl">{title}</h2>
                     <p className='text-justify '><span className='text-blue-500 font-bold text-lg'>Description: </span>{description}</p>
                     <p className='text-blue-500 font-bold text-lg'>Total Price: $ {price}</p>
@@ -76,9 +94,25 @@ const Checkout = () => {
             </form>
             </div>
 
+
             <div>
-                <Review></Review>
+
             </div>
+
+           
+            <div>
+                {
+                    reviews?.map(review=><ReviewItem
+                    key={review.serviceId} review={review}></ReviewItem>)
+                }
+            </div>
+
+            <AddReview
+            serviceId={_id}
+            serviceName={title}
+            ></AddReview>
+
+            <UserRequired></UserRequired>
 
 
         </div>

@@ -9,7 +9,7 @@ const About = () => {
    </div>
 
     <div className='md:w-1/2'>
-     <p className='text-2xl font-bold text-blue-500'>About Myself</p>
+     <p className='text-2xl font-bold text-blue-500'>About</p>
      <h1 className="my-5 text-5xl font-bold">
                        I am qualified <br />
                         & of experience <br />
